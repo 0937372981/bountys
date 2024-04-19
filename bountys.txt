@@ -1,0 +1,160 @@
+getgenv().Team = "Pirates" -- "Marines" & "Pirates"
+
+getgenv().BountyConfig = {
+		["Webhook"] = {
+			["Enabled"] = true,
+			["Url"] = "https://discord.com/api/webhooks/1199220388660514857/0FgUIj00i3g4n_e8xvg_S34qhwqneJ_hXEnlD5bR_kx4LE70Jv1KAXCplUajsl6fODeh",
+			["CustomImage"] = "", -- if not in put = auto img
+			["Mode Send"] = {"On Bounty Change","On Server Hop"}
+		},
+		["Fps Lock"] = {
+			["Enabled"] = false, -- not recommend
+			["Fps"] = 30
+		},
+		["Lock Bounty"] = {
+			["Enabled"] = false,
+			["Cap"] = 30 -- ( mean 30m )
+		},
+		["Add On"] = {
+		        ["ESP Players"] = true,
+			["No Attack Animation"] = true,
+			["Skip Fuck User"] = true, -- skip door and budha 
+			["Tp Around"] = false,
+			["Server Hop Region"] = "", -- find with u self '=' can use abbreviation like jap , tok if not put = auto
+			["Add Range"] = 0, -- add range from u and target
+			["Black Screen"] = false,
+			["Hop Server Time"] = {
+				["Enabled"] = true,
+				["Delay Hop Time"] = 170, -- 2 min 30 sec -- and normal is hop when kill all player in server
+			} ,
+			["Chat Sender"] = {
+				["Enabled"] = true ,
+				["Text"] = {"satboyydzpro"},
+			},
+
+			["% Health To Save"] = 35, -- this is if u health lower 35% it will be go safe zone
+			["% Health To Kill"] = 80, -- this is if u health higher it will kill 
+			["Reset Character Save Zone"] = true, -- reset chearacter from save zone if not in combat
+
+			["On Race V4"] = {
+				["Enabled"] = true ,
+				["Use This Skill on v4"] = { -- add skill that off/not have in custom method to this 
+					["Gun"] = {
+						["Enabled"] = false,
+						["Delay"] = 0,
+						["Skills"] = {
+							["Z"] = {
+								["Enable"] = true,
+								["HoldTime"] = 0,
+								["Go Near Player"] = false,
+							},
+							["X"] = {
+								["Enable"] = true,
+								["HoldTime"] = 0,
+								["Go Near Player"] = false,
+							},
+						},
+					},
+				}
+			},
+			["Fast Mode"] = true, --Fast Mode
+		},
+		["Skill"] = { -- just select one in this
+			["Gun Method"] = false,
+
+			["Auto Mode Beta"] = true, -- beta
+
+			["Custom Method"] = {
+				["Enabled"] = true,
+				["Melee"] = {
+					["Enabled"] = true,
+					["Delay"] = 0.2,
+					["Skills"] = {
+						["Z"] = {
+							["Enable"] = true,
+							["HoldTime"] = 0,
+							["Go Near Player"] = true,
+						},
+						["X"] = {
+							["Enable"] = true,
+							["HoldTime"] = 0.1,
+							["Go Near Player"] = true,
+						},
+
+						["C"] = {
+							["Enable"] = true,
+							["HoldTime"] = 0.1,
+							["Go Near Player"] = true,
+						},
+					},
+				},
+				["Blox Fruit"] = {
+					["Enabled"] = true,
+					["Delay"] = 0.3,
+					["Skills"] = {
+						["Z"] = {
+							["Enable"] = true,
+							["HoldTime"] = 1,
+							["Go Near Player"] = true,
+						},
+						["X"] = {
+							["Enable"] = true,
+							["HoldTime"] = 0,
+							["Go Near Player"] = true,
+						},
+						["C"] = {
+							["Enable"] = false,
+							["HoldTime"] = 0,
+							["Go Near Player"] = true,
+						},
+						["V"] = {
+							["Enable"] = true,
+							["HoldTime"] = 0.2,
+							["Go Near Player"] = true,
+						},
+						["F"] = {
+							["Enable"] = true,
+							["HoldTime"] = 0,
+							["Go Near Player"] = true,
+						},
+					},
+				},
+				-- ["Gun"] = { -- thin this example i add this in to on v4 use
+				--     ["Enabled"] = false,
+				--     ["Delay"] = 0,
+				--     ["Skills"] = {
+				--         ["Z"] = {
+				--             ["Enable"] = true,
+				--             ["HoldTime"] = 1,
+				--             ["Go Near Player"] = false,
+				--         },
+				--         ["X"] = {
+				--             ["Enable"] = true,
+				--             ["HoldTime"] = 0,
+				--             ["Go Near Player"] = false,
+				--         },
+				--     },
+				-- },
+				["Sword"] = {
+					["Enabled"] = false,
+					["Delay"] = 0.2,
+					["Skills"] = {
+						["Z"] = {
+							["Enable"] = true,
+							["HoldTime"] = 0,
+							["Go Near Player"] = true,
+						},
+						["X"] = {
+							["Enable"] = true,
+							["HoldTime"] = 0,
+							["Go Near Player"] = false,
+						},
+					},
+				},
+			}
+		}
+	}
+_G.Key = "main_MbQCKvLAyPPkHKUtRDk2"
+
+_G.DiscordId = "1135127450364428338"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/RoyryX/main/Loader.lua"))();
